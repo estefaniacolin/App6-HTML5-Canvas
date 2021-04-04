@@ -43,6 +43,11 @@ function draw_b() {
   		var b_context = b_canvas.getContext("2d");
   		b_context.fillRect(50, 25, 150, 100);
 }
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Estefania Colin", 10, 50);
 </script>
 
 <style>	
@@ -79,7 +84,7 @@ function draw_b() {
 	
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
 	onclick="draw_b();" myCanvas="w3-btn w3-black w3-round">Rectangle</a>
-	
+	onclick="draw_b();" myCanvas="w3-btn w3-black w3-round">Name</a>
 </canvas>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
