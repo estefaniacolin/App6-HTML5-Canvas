@@ -39,23 +39,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
-	
 	function draw_b() {
   		var b_canvas = document.getElementById("b");
   		var b_context = b_canvas.getContext("2d");
   		b_context.fillRect(50, 25, 150, 100);
 		
+}
+	
+	function draw_b() {
+		var b_canvas = document.getElementById("b");
+		var b_context = b_canvas.getContext("2d");
+		b_context.font = "18px Arial";
+		b_context.strokeText("Estefania Colin", 10, 50);
 		
 }
 	
+	var
 	
-	function draw_c() {
-	var c_canvas = document.getElementById("c");
-	var c_context = c_canvas.getContext("2d");
-	c_context.font = "18px Arial";
-	c_context.strokeText("Estefania Colin", 10, 50);
-		
 }
+
+	var b_canvas = document.getElementById("b");
+	b_canvas.width = b_canvas.width;
+	
 </script>
 
 <style>	
@@ -90,13 +95,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-<canvas id="b" width="200" height="100" style="border:1px solid #000000;"></canvas> </b>
+<canvas id="b" width="500" height="500"></canvas> </b>
 	<button onclick="draw_b();" class="w3-btn w3-black w3-round">Rectangle</a>
-	</div>
-</div>
-
-<canvas id="c" width="200" height="100" style="border:1px solid #000000;"></canvas> </b>
-	<button onclick="draw_c();" class="w3-btn w3-black w3-round">Name</a>
+	<button onclick="draw_b();" class="w3-btn w3-black w3-round">Name</a>
+	<button onclick="draw_b();" class="w3-btn w3-black w3-round">Image</a>
+	<button onclick="draw_b();" class="w3-btn w3-black w3-round">Clear/Delete</a>
 	</div>
 </div>
 
